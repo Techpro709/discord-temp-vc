@@ -1,4 +1,6 @@
 // Discord.js Requirement for Bots.
+require('dotenv').config()
+
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
@@ -15,5 +17,5 @@ tempChannels.registerChannel("channel-id", { // The VC Creator Channel
 });
 
 // Login with bot.
-client.login("bot-token");
+client.login(`${tkn}`);
 console.log('Bot Ready, Now you can create your own custom temp Voice Channels!')
